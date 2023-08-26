@@ -1,8 +1,8 @@
 from TextSummarizer.pipeline.data_ingestion_pipeline import DIPipeline
-from TextSummarizer.pipeline.data_validation_pipeline import DataValidationTrainingPipeline
-from TextSummarizer.pipeline.data_transformation_pipeline import DataTransformationTrainingPipeline
-from TextSummarizer.pipeline.model_trainer_pipeline import ModelTrainerTrainingPipeline
-from TextSummarizer.pipeline.model_evaluation_pipeline import ModelEvaluationTrainingPipeline
+from TextSummarizer.pipeline.data_validation_pipeline import DVPipeline
+from TextSummarizer.pipeline.data_transformation_pipeline import DTPipeline
+from TextSummarizer.pipeline.model_trainer_pipeline import MTPipeline
+from TextSummarizer.pipeline.model_evaluation_pipeline import MEPipeline
 from TextSummarizer.logger import logging 
 from TextSummarizer.exception import CustomException, sys
 
@@ -21,10 +21,10 @@ except Exception as e:
 
 STAGE_NAME = "Data Validation stage"
 try:
-   logger.info(f">>>>>> stage {STAGE_NAME} started <<<<<<") 
-   data_validation = DataValidationTrainingPipeline()
+   logging.info(f">>>>>> stage {STAGE_NAME} started <<<<<<") 
+   data_validation = DVPipeline()
    data_validation.main()
-   logger.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<\n\nx==========x")
+   logging.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<\n\nx==========x")
 except Exception as e:
         logging.exception(e)
         raise CustomException(e,sys)
@@ -33,10 +33,10 @@ except Exception as e:
 
 STAGE_NAME = "Data Transformation stage"
 try:
-   logger.info(f">>>>>> stage {STAGE_NAME} started <<<<<<") 
-   data_transformation = DataTransformationTrainingPipeline()
+   logging.info(f">>>>>> stage {STAGE_NAME} started <<<<<<") 
+   data_transformation = DTPipeline()
    data_transformation.main()
-   logger.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<\n\nx==========x")
+   logging.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<\n\nx==========x")
 except Exception as e:
         logging.exception(e)
         raise CustomException(e,sys)
@@ -45,11 +45,11 @@ except Exception as e:
 
 STAGE_NAME = "Model Trainer stage"
 try: 
-   logger.info(f"*******************")
-   logger.info(f">>>>>> stage {STAGE_NAME} started <<<<<<")
-   model_trainer = ModelTrainerTrainingPipeline()
+   logging.info(f"*******************")
+   logging.info(f">>>>>> stage {STAGE_NAME} started <<<<<<")
+   model_trainer = MTPipeline()
    model_trainer.main()
-   logger.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<\n\nx==========x")
+   logging.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<\n\nx==========x")
 except Exception as e:
         logging.exception(e)
         raise CustomException(e,sys)
@@ -59,11 +59,11 @@ except Exception as e:
 
 STAGE_NAME = "Model Evaluation stage"
 try: 
-   logger.info(f"*******************")
-   logger.info(f">>>>>> stage {STAGE_NAME} started <<<<<<")
-   model_evaluation = ModelEvaluationTrainingPipeline()
+   logging.info(f"*******************")
+   logging.info(f">>>>>> stage {STAGE_NAME} started <<<<<<")
+   model_evaluation = MEPipeline()
    model_evaluation.main()
-   logger.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<\n\nx==========x")
+   logging.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<\n\nx==========x")
 except Exception as e:
         logging.exception(e)
         raise CustomException(e,sys)
