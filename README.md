@@ -42,3 +42,8 @@ Now,
 ```bash
 open up you local host and port
 ```
+### Results
+
+## Local Deployment
+![Homepage](./homepage.png)
+![result](./result.png)
