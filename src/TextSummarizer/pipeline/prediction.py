@@ -1,4 +1,4 @@
-from TextSummarizer.config.configuration import ConfigurationManager
+from src.TextSummarizer.config.configuration import ConfigurationManager
 from transformers import AutoTokenizer
 from transformers import pipeline
 
