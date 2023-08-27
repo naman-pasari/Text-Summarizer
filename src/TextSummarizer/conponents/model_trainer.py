@@ -16,7 +16,7 @@ class ModelTrainer:
     def train(self):
         device = "cuda" if torch.cuda.is_available() else "cpu"
         print(device)
-        os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "max_split_size_mb:512"
+        os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "max_split_size_mb:1024"
         tokenizer = AutoTokenizer.from_pretrained(self.config.model_ckpt)
         model_bart = AutoModelForSeq2SeqLM.from_pretrained(self.config.model_ckpt).to(device)
         seq2seq_data_colator = DataCollatorForSeq2Seq(

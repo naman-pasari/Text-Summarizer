@@ -47,9 +47,9 @@ STAGE_NAME = "Model Trainer stage"
 try: 
    logging.info(f"*******************")
    logging.info(f">>>>>> stage {STAGE_NAME} started <<<<<<")
-   #os.system(f'pip install --upgrade accelerate')
-   #os.system(f'pip uninstall -y transformers accelerate')
-   #os.system(f'pip install transformers accelerate')
+   os.system(f'pip install --upgrade accelerate')
+   os.system(f'pip uninstall -y transformers accelerate')
+   os.system(f'pip install transformers accelerate')
    model_trainer = MTPipeline()
    model_trainer.main()
    logging.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<\n\nx==========x")
