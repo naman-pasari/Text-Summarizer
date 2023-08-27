@@ -1,4 +1,10 @@
-# Text-Summarizer-
+# Text-Summarizer-Project
+## Project Overview
+The Text Summarizer project utilizes the T5-Small model, a variant of the Text-To-Text Transfer Transformer (T5) developed by Google, to automatically generate concise and coherent summaries of longer pieces of text. This project aims to improve the accessibility of information by condensing lengthy documents into succinct summaries, enabling users to quickly grasp the main points without having to go through the entire text.
+
+## Model Choice: T5-Small
+The T5-Small model is a pre-trained transformer-based language model that excels in text-to-text tasks. It can be fine-tuned for specific applications, such as text summarization. This model has proven effective in generating high-quality summaries, as it is capable of understanding the contextual nuances of the input text and generating coherent and relevant summaries.
+
 
 # How to run?
 ### STEPS:
