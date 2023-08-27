@@ -46,4 +46,27 @@ open up you local host and port
 
 ## Local Deployment
 ![Homepage](./homepage.png)
+```bash
+# Example
+User: Can you give me a summary of the plot of the movie "Inception"?
+
+Bot: "Inception" is a science fiction movie directed by Christopher Nolan. The story revolves around Dom Cobb, a skilled thief who specializes in entering people's dreams to steal their secrets. Cobb is given the task of planting an idea into someone's mind, known as "inception," which is considered a challenging and dangerous feat. As Cobb and his team navigate various dream layers, the boundaries between reality and dreams become blurred, leading to mind-bending sequences and unexpected twists.
+
+User: How about the main characters in the movie?
+
+Bot: The main characters in "Inception" include Dom Cobb, portrayed by Leonardo DiCaprio. He is a skilled extractor who becomes obsessed with the idea of reuniting with his family. Arthur, played by Joseph Gordon-Levitt, is Cobb's close associate and a trusted member of the team. Ariadne, portrayed by Ellen Page, is an architecture student who joins Cobb's team to design dreamscapes. Other notable characters include Eames, played by Tom Hardy, and Mal, Cobb's deceased wife, portrayed by Marion Cotillard.
+
+User: What is the overall tone of the movie?
+
+Bot: "Inception" combines elements of science fiction, thriller, and psychological drama. The film's tone is intense and thought-provoking, as it delves into complex themes such as the nature of reality, dreams, and the subconscious. The blend of action-packed sequences with philosophical exploration gives the movie a unique and captivating atmosphere.
+
+User: Can you summarize the critical reception of the film?
+
+Bot: "Inception" received widespread critical acclaim upon its release. Critics praised its intricate plot, stunning visual effects, and innovative concepts. The film's exploration of dreams and the human mind sparked discussions among audiences and scholars alike. Christopher Nolan's direction and the performances of the cast were also highly praised. "Inception" became a commercial success and is considered one of the standout films of the 21st century.
+
+User: That sounds fascinating! I'll definitely watch it. Thanks for the summary!
+
+Bot: You're welcome! Enjoy watching "Inception," and feel free to ask if you have more questions in the future.
+
+```
 ![result](./result.png)
