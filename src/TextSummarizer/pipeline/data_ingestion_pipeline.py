@@ -1,5 +1,5 @@
-from TextSummarizer.config.configuration import ConfigurationManager
-from TextSummarizer.conponents.data_ingestion import DataIngestion
+from src.TextSummarizer.config.configuration import ConfigurationManager
+from src.TextSummarizer.conponents.data_ingestion import DataIngestion
 
 class DIPipeline:
     def __init__(self):

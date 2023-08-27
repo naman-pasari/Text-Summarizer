@@ -1,8 +1,8 @@
 import os
 import shutil
 import zipfile
-from TextSummarizer.utils.common import get_size, logging
-from TextSummarizer.entity import (DataIngestionConfig)
+from src.TextSummarizer.utils.common import logging
+from src.TextSummarizer.entity import (DataIngestionConfig)
 
 
 

@@ -1,5 +1,5 @@
-from TextSummarizer.config.configuration import ConfigurationManager
-from TextSummarizer.conponents.model_evaluation import ModelEvaluation
+from src.TextSummarizer.config.configuration import ConfigurationManager
+from src.TextSummarizer.conponents.model_evaluation import ModelEvaluation
 
 class MEPipeline:
     def __init__(self):

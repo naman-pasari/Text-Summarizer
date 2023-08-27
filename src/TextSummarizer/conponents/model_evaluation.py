@@ -3,7 +3,7 @@ from datasets import load_dataset, load_from_disk, load_metric
 import torch
 import pandas as pd
 from tqdm import tqdm
-from TextSummarizer.entity import ModelEvaluationConfig
+from src.TextSummarizer.entity import ModelEvaluationConfig
 
 
 
@@ -74,7 +74,7 @@ class ModelEvaluation:
 
         rouge_dict = dict((rn, score[rn].mid.fmeasure ) for rn in rouge_names )
 
-        df = pd.DataFrame(rouge_dict, index = ['pegasus'] )
+        df = pd.DataFrame(rouge_dict, index = ['t5-small'] )
         df.to_csv(self.config.metric_file_name, index=False)
 
         

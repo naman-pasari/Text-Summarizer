@@ -1,5 +1,5 @@
-from TextSummarizer.config.configuration import ConfigurationManager
-from TextSummarizer.conponents.model_trainer import ModelTrainer
+from src.TextSummarizer.config.configuration import ConfigurationManager
+from src.TextSummarizer.conponents.model_trainer import ModelTrainer
 
 
 class MTPipeline:

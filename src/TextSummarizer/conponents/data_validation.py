@@ -1,6 +1,6 @@
 import os
-from TextSummarizer.exception import CustomException,sys
-from TextSummarizer.entity import DataValidationConfig
+from src.TextSummarizer.exception import CustomException,sys
+from src.TextSummarizer.entity import DataValidationConfig
 
 class DataValidation:
     def __init__(self, config: DataValidationConfig):

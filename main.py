@@ -1,10 +1,10 @@
-from TextSummarizer.pipeline.data_ingestion_pipeline import DIPipeline
-from TextSummarizer.pipeline.data_validation_pipeline import DVPipeline
-from TextSummarizer.pipeline.data_transformation_pipeline import DTPipeline
-from TextSummarizer.pipeline.model_trainer_pipeline import MTPipeline
-from TextSummarizer.pipeline.model_evaluation_pipeline import MEPipeline
-from TextSummarizer.logger import logging 
-from TextSummarizer.exception import CustomException, sys
+from src.TextSummarizer.pipeline.data_ingestion_pipeline import DIPipeline
+from src.TextSummarizer.pipeline.data_validation_pipeline import DVPipeline
+from src.TextSummarizer.pipeline.data_transformation_pipeline import DTPipeline
+from src.TextSummarizer.pipeline.model_trainer_pipeline import MTPipeline
+from src.TextSummarizer.pipeline.model_evaluation_pipeline import MEPipeline
+from src.TextSummarizer.logger import *
+from src.TextSummarizer.exception import *
 
 STAGE_NAME = "Data Ingestion stage"
 try:
@@ -47,6 +47,9 @@ STAGE_NAME = "Model Trainer stage"
 try: 
    logging.info(f"*******************")
    logging.info(f">>>>>> stage {STAGE_NAME} started <<<<<<")
+   #os.system(f'pip install --upgrade accelerate')
+   #os.system(f'pip uninstall -y transformers accelerate')
+   #os.system(f'pip install transformers accelerate')
    model_trainer = MTPipeline()
    model_trainer.main()
    logging.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<\n\nx==========x")

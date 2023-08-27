@@ -1,5 +1,5 @@
-from TextSummarizer.config.configuration import ConfigurationManager
-from TextSummarizer.conponents.data_transformation import DataTransformation
+from src.TextSummarizer.config.configuration import ConfigurationManager
+from src.TextSummarizer.conponents.data_transformation import DataTransformation
 
 
 class DTPipeline:
