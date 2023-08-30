@@ -12,7 +12,7 @@ The T5-Small model is a pre-trained transformer-based language model that excels
 Clone the repository
 
 ```bash
-https://github.com/entbappy/End-to-end-Text-Summarization
+https://github.com/Neowick3000D/Text-Summarizer.git
 ```
 ### STEP 01- Create a conda environment after opening the repository
 
